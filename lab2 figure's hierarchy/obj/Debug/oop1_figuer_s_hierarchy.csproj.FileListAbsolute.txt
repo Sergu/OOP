@@ -1,0 +1,9 @@
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.Form1.resources
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.Properties.Resources.resources
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.csproj.GenerateResource.Cache
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\bin\Debug\oop1_figuer_s_hierarchy.exe.config
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\bin\Debug\oop1_figuer_s_hierarchy.exe
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\bin\Debug\oop1_figuer_s_hierarchy.pdb
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.exe
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.pdb
+E:\учёба\4 сем\ООП\лаба 1\oop1_figuer's_hierarchy\oop1_figuer's_hierarchy\obj\Debug\oop1_figuer_s_hierarchy.csprojResolveAssemblyReference.cache
