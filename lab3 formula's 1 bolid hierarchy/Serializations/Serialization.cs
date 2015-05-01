@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Formula1BolidHierarchy
 {
-    class Serialization
+    public static class Serialization
     {
+        private static IBolidSerializer bolidSerializer;
         
     }
 }

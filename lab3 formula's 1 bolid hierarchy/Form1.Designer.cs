@@ -39,6 +39,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonSerialize = new System.Windows.Forms.Button();
             this.panelBolids.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,11 +152,22 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Serialize Objects";
             // 
+            // buttonSerialize
+            // 
+            this.buttonSerialize.Location = new System.Drawing.Point(594, 358);
+            this.buttonSerialize.Name = "buttonSerialize";
+            this.buttonSerialize.Size = new System.Drawing.Size(75, 23);
+            this.buttonSerialize.TabIndex = 5;
+            this.buttonSerialize.Text = "Serialize";
+            this.buttonSerialize.UseVisualStyleBackColor = true;
+            this.buttonSerialize.Click += new System.EventHandler(this.buttonSerialize_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 550);
+            this.Controls.Add(this.buttonSerialize);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
@@ -182,6 +194,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonSerialize;
     }
 }
 

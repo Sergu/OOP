@@ -9,7 +9,9 @@ namespace Formula1BolidHierarchy
     public interface IBolid
     {
         string name { get; set; }
-        string engine {get;set;}
-        string body {get;set;}
+        string engine { get; set; }
+        string body { get; set; }
+        //public virtual string Serialize() { return null; }
+        //void Deserialize();
     }
 }

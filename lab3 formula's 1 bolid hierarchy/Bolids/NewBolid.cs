@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Formula1BolidHierarchy
 {
-    class NewBolid : Bolid80
+    public class NewBolid : Bolid80
     {
         public string Kers{ get; set; }
         public string Drs { get; set; }

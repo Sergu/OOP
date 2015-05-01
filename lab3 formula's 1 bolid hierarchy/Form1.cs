@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Formula1BolidHierarchy
 {
     public partial class Form1 : Form
     {
         public static List<IBolid> listBolids;
-        public static IBolid currentObject;
+        public IBolid currentObject;
         public Control panel;
         public bool changeModFlag;
+        public Creator creator;
         public Form1()
         {
             InitializeComponent();
@@ -28,8 +30,9 @@ namespace Formula1BolidHierarchy
             {
                 DisposePanel();
             }
-            FirstBolid firstbolid = new FirstBolid();
-            currentObject = firstbolid;
+            currentObject = new FirstBolid();
+            creator = new FirstBolidCreator();
+            //currentObject = firstbolid;
             changeModFlag = false;
             PanelCreate(currentObject);
         }
@@ -40,8 +43,9 @@ namespace Formula1BolidHierarchy
             {
                 DisposePanel();
             }
-            Bolid60 bolid60 = new Bolid60();
-            currentObject = bolid60;
+            currentObject = new Bolid60();
+            creator = new Bolid60Creator();
+            //currentObject = bolid60;
             changeModFlag = false;
             PanelCreate(currentObject);
         }
@@ -53,6 +57,7 @@ namespace Formula1BolidHierarchy
                 DisposePanel();
             }
             BolidTurbo bolidTurbo = new BolidTurbo();
+            creator = new BolidTurboCreator();
             currentObject = bolidTurbo;
             changeModFlag = false;
             PanelCreate(currentObject);
@@ -65,6 +70,7 @@ namespace Formula1BolidHierarchy
                 DisposePanel();
             }
             BolidAtmo bolidAtmo = new BolidAtmo();
+            creator = new BolidAtmoCreator();
             currentObject = bolidAtmo;
             changeModFlag = false;
             PanelCreate(currentObject);
@@ -77,6 +83,7 @@ namespace Formula1BolidHierarchy
                 DisposePanel();
             }
             Bolid80 bolid80 = new Bolid80();
+            creator = new Bolid80Creator();
             currentObject = bolid80;
             changeModFlag = false;
             PanelCreate(currentObject);
@@ -89,6 +96,7 @@ namespace Formula1BolidHierarchy
                 DisposePanel();
             }
             NewBolid currentbolid = new NewBolid();
+            creator = new NewBolidCreator();
             currentObject = currentbolid;
             changeModFlag = false;
             PanelCreate(currentObject);
@@ -118,11 +126,11 @@ namespace Formula1BolidHierarchy
                     }
                     if (ctr.Name == "comboboxBody")
                     {
-                        currentObject.body = ctr.Text;
+                        this.currentObject.body = ctr.Text;
                     }
                     if (ctr.Name == "comboboxEngine")
                     {
-                        currentObject.engine = ctr.Text;
+                        this.currentObject.engine = ctr.Text;
                     }
                 }
             }
@@ -201,16 +209,18 @@ namespace Formula1BolidHierarchy
             {
                 //comboBoxObjects.SelectedText = currentObject.name;
                 //listBolids[comboBoxObjects.SelectedIndex] = currentObject;
-                comboBoxObjects.SelectedItem = currentObject;
+                (comboBoxObjects.SelectedItem as IBolidSerializer).bolid = currentObject;
                 //listBolids[comboBoxObjects.SelectedIndex] = currentObject;
                 DisposePanel();
             }
             else
             {
+                IBolidSerializer bolidSerializer = creator.FactoryMethod(currentObject);
+                
                 //comboBoxObjects.Items.Add(currentObject.name);
                 //listBolids.Add(currentObject);
                 //DisposePanel();
-                comboBoxObjects.Items.Add(currentObject);
+                comboBoxObjects.Items.Add(bolidSerializer);
                 //listBolids.Add(currentObject);
                 DisposePanel();
 
@@ -499,7 +509,7 @@ namespace Formula1BolidHierarchy
         {
             changeModFlag = true;
             //currentObject = listBolids[comboBoxObjects.SelectedIndex];
-            currentObject = (IBolid)comboBoxObjects.SelectedItem;
+            currentObject = ((IBolidSerializer)comboBoxObjects.SelectedItem).bolid;
             if (panel != null)
             {
                 DisposePanel();
@@ -600,6 +610,18 @@ namespace Formula1BolidHierarchy
                     }
                 }
             }
+        }
+
+        private void buttonSerialize_Click(object sender, EventArgs e)
+        {
+            StreamWriter streamWriter;
+            FileInfo file = new FileInfo("serializeObjects.txt");
+            streamWriter = file.AppendText();
+            foreach (IBolidSerializer car in comboBoxObjects.Items)
+            {
+                streamWriter.WriteLine(car.Serialize());
+            }
+            streamWriter.Close();
         }
 
     }

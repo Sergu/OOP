@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Formula1BolidHierarchy
 {
-    public class Bolid80 : BolidAtmo
+    public interface IBolidSerializer
     {
-        public string FrontWing { get; set; }
+        IBolid bolid { get; set; }
+        string Serialize();
     }
 }
