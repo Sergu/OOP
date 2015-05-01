@@ -1,0 +1,1 @@
+{class:BolidTurbo;name:asd;engine:;body:;nose:;turbo:;rearwing:;downforce:;}

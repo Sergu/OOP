@@ -624,5 +624,29 @@ namespace Formula1BolidHierarchy
             streamWriter.Close();
         }
 
+        public void buttonDeserialize_Click(object sender, EventArgs e)
+        {
+            comboBoxObjects.Items.Clear();
+            using (StreamReader streamReader = new StreamReader("serializeObjects.txt"))
+            {
+                string line;
+                while ((line = streamReader.ReadLine()) != null)
+                {
+                    comboBoxObjects.Items.Add(Deserialization.Deserialize(line));
+                }
+            }
+            File.Delete("serializeObjects.txt");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            File.Delete("serializeObjects.txt");
+        }
+
+        public  void buttonRemoveObject_Click(object sender, EventArgs e)
+        {
+            comboBoxObjects.Items.Remove(comboBoxObjects.SelectedItem);
+            comboBoxObjects.SelectedIndex = -1;
+        }
     }
 }

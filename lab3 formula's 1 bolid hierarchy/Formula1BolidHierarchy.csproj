@@ -67,7 +67,7 @@
     <Compile Include="Serializations\FirstBolidSerializer.cs" />
     <Compile Include="Serializations\IBolidSerializer.cs" />
     <Compile Include="Serializations\NewBolidSerializer.cs" />
-    <Compile Include="Serializations\Serialization.cs" />
+    <Compile Include="Serializations\Deserialization.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -36,10 +36,10 @@
             this.buttonBolid60 = new System.Windows.Forms.Button();
             this.buttonFirstBolid = new System.Windows.Forms.Button();
             this.comboBoxObjects = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.buttonSerialize = new System.Windows.Forms.Button();
+            this.buttonDeserialize = new System.Windows.Forms.Button();
+            this.buttonRemoveObject = new System.Windows.Forms.Button();
             this.panelBolids.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,41 +120,24 @@
             // comboBoxObjects
             // 
             this.comboBoxObjects.FormattingEnabled = true;
-            this.comboBoxObjects.Location = new System.Drawing.Point(337, 29);
+            this.comboBoxObjects.Location = new System.Drawing.Point(442, 73);
             this.comboBoxObjects.Name = "comboBoxObjects";
-            this.comboBoxObjects.Size = new System.Drawing.Size(153, 21);
+            this.comboBoxObjects.Size = new System.Drawing.Size(236, 21);
             this.comboBoxObjects.TabIndex = 1;
             this.comboBoxObjects.SelectedIndexChanged += new System.EventHandler(this.comboBoxObjects_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(542, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(153, 21);
-            this.comboBox2.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(334, 13);
+            this.label1.Location = new System.Drawing.Point(439, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Objects";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(542, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Serialize Objects";
-            // 
             // buttonSerialize
             // 
-            this.buttonSerialize.Location = new System.Drawing.Point(594, 358);
+            this.buttonSerialize.Location = new System.Drawing.Point(697, 73);
             this.buttonSerialize.Name = "buttonSerialize";
             this.buttonSerialize.Size = new System.Drawing.Size(75, 23);
             this.buttonSerialize.TabIndex = 5;
@@ -162,19 +145,40 @@
             this.buttonSerialize.UseVisualStyleBackColor = true;
             this.buttonSerialize.Click += new System.EventHandler(this.buttonSerialize_Click);
             // 
+            // buttonDeserialize
+            // 
+            this.buttonDeserialize.Location = new System.Drawing.Point(697, 102);
+            this.buttonDeserialize.Name = "buttonDeserialize";
+            this.buttonDeserialize.Size = new System.Drawing.Size(75, 23);
+            this.buttonDeserialize.TabIndex = 6;
+            this.buttonDeserialize.Text = "Deserialize";
+            this.buttonDeserialize.UseVisualStyleBackColor = true;
+            this.buttonDeserialize.Click += new System.EventHandler(this.buttonDeserialize_Click);
+            // 
+            // buttonRemoveObject
+            // 
+            this.buttonRemoveObject.Location = new System.Drawing.Point(342, 73);
+            this.buttonRemoveObject.Name = "buttonRemoveObject";
+            this.buttonRemoveObject.Size = new System.Drawing.Size(75, 23);
+            this.buttonRemoveObject.TabIndex = 7;
+            this.buttonRemoveObject.Text = "Remove";
+            this.buttonRemoveObject.UseVisualStyleBackColor = true;
+            this.buttonRemoveObject.Click += new System.EventHandler(this.buttonRemoveObject_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 550);
+            this.Controls.Add(this.buttonRemoveObject);
+            this.Controls.Add(this.buttonDeserialize);
             this.Controls.Add(this.buttonSerialize);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBoxObjects);
             this.Controls.Add(this.panelBolids);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelBolids.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,10 +195,10 @@
         private System.Windows.Forms.Button buttonBolid60;
         private System.Windows.Forms.Button buttonFirstBolid;
         private System.Windows.Forms.ComboBox comboBoxObjects;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonSerialize;
+        private System.Windows.Forms.Button buttonDeserialize;
+        private System.Windows.Forms.Button buttonRemoveObject;
     }
 }
 
