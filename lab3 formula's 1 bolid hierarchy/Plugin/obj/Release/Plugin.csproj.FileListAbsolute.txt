@@ -1,0 +1,8 @@
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\Plugin.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\Plugin.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\BolidContracts.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\PluginContracts.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\BolidContracts.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Release\PluginContracts.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\obj\Release\Plugin.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\obj\Release\Plugin.pdb

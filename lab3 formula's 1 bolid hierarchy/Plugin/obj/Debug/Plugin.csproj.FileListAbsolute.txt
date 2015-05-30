@@ -1,0 +1,9 @@
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\Plugin.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\Plugin.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\BolidContracts.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\PluginContracts.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\BolidContracts.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\bin\Debug\PluginContracts.pdb
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\obj\Debug\Plugin.csprojResolveAssemblyReference.cache
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\obj\Debug\Plugin.dll
+E:\учёба\4 сем\ООП\лаба 3\Formula1BolidHierarchy\Plugin\obj\Debug\Plugin.pdb
